@@ -10,6 +10,7 @@ const print = (value) => {
       <v-btn class="mx-auto"
              @click="print(header)"
       >Get data</v-btn>
+      <NuxtLink to="/login">Login</NuxtLink>
     </v-app-bar>
 
     <v-navigation-drawer
@@ -21,6 +22,7 @@ const print = (value) => {
       <div class="d-flex justify-center align-center h-100">
         <v-btn @click="print('drawer')">Get data</v-btn>
       </div>
+
     </v-navigation-drawer>
 
     <v-main class="d-flex align-center justify-center" style="min-height: 300px;">
