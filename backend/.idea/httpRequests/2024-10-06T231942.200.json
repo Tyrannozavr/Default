@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "number": "asdf",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:11:33.317550Z",
+    "brand": 2,
+    "updated_by": null
+  },
+  {
+    "id": 2,
+    "number": "eedet",
+    "capacity": "2.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:14:35.434177Z",
+    "brand": 3,
+    "updated_by": 1
+  },
+  {
+    "id": 3,
+    "number": "effwe",
+    "capacity": "2.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:15:50.206526Z",
+    "brand": 2,
+    "updated_by": 1
+  },
+  {
+    "id": 4,
+    "number": "sceft",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:16:24.767998Z",
+    "brand": 4,
+    "updated_by": 1
+  },
+  {
+    "id": 5,
+    "number": "rr",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:17:45.833836Z",
+    "brand": 5,
+    "updated_by": 1
+  },
+  {
+    "id": 6,
+    "number": "аккп",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:18:22.049121Z",
+    "brand": 6,
+    "updated_by": 1
+  }
+]

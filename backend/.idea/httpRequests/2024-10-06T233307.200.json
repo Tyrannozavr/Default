@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "brand": "asdf",
+    "updated_by": "",
+    "number": "asdf",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:11:33.317550Z"
+  },
+  {
+    "id": 2,
+    "brand": "eed",
+    "updated_by": "sl dimka ",
+    "number": "eedet",
+    "capacity": "2.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:14:35.434177Z"
+  },
+  {
+    "id": 3,
+    "brand": "asdf",
+    "updated_by": "sl dimka ",
+    "number": "effwe",
+    "capacity": "2.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:15:50.206526Z"
+  },
+  {
+    "id": 4,
+    "brand": "efwfv",
+    "updated_by": "sl dimka ",
+    "number": "sceft",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:16:24.767998Z"
+  },
+  {
+    "id": 5,
+    "brand": "dvferb",
+    "updated_by": "sl dimka ",
+    "number": "rr",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:17:45.833836Z"
+  },
+  {
+    "id": 6,
+    "brand": "впа иа",
+    "updated_by": "sl dimka ",
+    "number": "аккп",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:18:22.049121Z"
+  }
+]

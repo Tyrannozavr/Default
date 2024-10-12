@@ -1,0 +1,65 @@
+[
+  {
+    "id": 11,
+    "updated_by": "sl dimka ",
+    "brand": "fgd",
+    "number": "ae",
+    "capacity": "0.001",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:53:24.761356Z"
+  },
+  {
+    "id": 12,
+    "updated_by": "sl dimka ",
+    "brand": "Brand object (19)",
+    "number": "e3d",
+    "capacity": "2.000",
+    "is_active": true,
+    "updated_at": "2024-10-07T06:12:48.344769Z"
+  },
+  {
+    "id": 13,
+    "updated_by": "sl dimka ",
+    "brand": "Brand object (21)",
+    "number": "hsn-2000",
+    "capacity": "30.345",
+    "is_active": true,
+    "updated_at": "2024-10-07T06:13:50.112635Z"
+  },
+  {
+    "id": 14,
+    "updated_by": "",
+    "brand": "",
+    "number": "qewqewr",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:57:12.263224Z"
+  },
+  {
+    "id": 15,
+    "updated_by": "",
+    "brand": "",
+    "number": "sdge",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:58:40.179596Z"
+  },
+  {
+    "id": 16,
+    "updated_by": "sl dimka ",
+    "brand": "wer",
+    "number": "ert",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:59:15.983180Z"
+  },
+  {
+    "id": 17,
+    "updated_by": "sl dimka ",
+    "brand": " sdf",
+    "number": "eef",
+    "capacity": "1.000",
+    "is_active": true,
+    "updated_at": "2024-10-06T20:59:43.204974Z"
+  }
+]

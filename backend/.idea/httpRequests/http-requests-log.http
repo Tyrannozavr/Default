@@ -1,0 +1,502 @@
+POST http://localhost:8000/api/users/token/
+Content-Type: application/json
+Content-Length: 51
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "email": "username",
+  "password": "password"
+}
+
+<> 2024-10-12T144801.401.json
+
+###
+
+POST http://localhost:8000/api/users/token/
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "username",
+  "password": "password"
+}
+
+<> 2024-10-12T144748.400.json
+
+###
+
+POST http://localhost:8000/api/users/token
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "username",
+  "password": "password"
+}
+
+<> 2024-10-12T144729.500.html
+
+###
+
+POST http://localhost:8000/api/token
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "username",
+  "password": "password"
+}
+
+<> 2024-10-12T144648.404.html
+
+###
+
+POST http://localhost:8000/api/token
+Content-Type: application/json
+Content-Length: 54
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "username": "username",
+  "password": "password"
+}
+
+<> 2024-10-12T144530.404.html
+
+###
+
+POST http://localhost:8000/api/loaders/incidents/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+Content-Length: 112
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "started_at": "2024-10-07T06:41:22Z",
+  "finished_at": null,
+  "description": "helloworld",
+  "loader": 19
+}
+
+<> 2024-10-07T123613.201.json
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100733.200.json
+
+###
+
+POST http://localhost:8000/api/loaders/incidents/?loaderId=1
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+Content-Length: 112
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "started_at": "2024-10-07T06:41:22Z",
+  "finished_at": null,
+  "description": "helloworld",
+  "loader": 19
+}
+
+<> 2024-10-07T100730.201.json
+
+###
+
+POST http://localhost:8000/api/loaders/incidents/?loaderId=1
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+Content-Length: 113
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "started_at": "2024-10-07T06:41:22Z",
+  "finished_at": null,
+  "description": "helloworld",
+  "loader": 19,
+}
+
+<> 2024-10-07T100725.400.json
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100541.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100453.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100319.500.html
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+Authorization: Token {{$auth.token()}}
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100245.401.json
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100223.401.json
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100221.401.json
+
+###
+
+GET http://localhost:8000/api/loaders/incidents/?loader=1
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T100215.404.html
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T092025.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T091910.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T091821.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T091744.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-07T091537.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T233307.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T233306.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T233304.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T232543.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T232428.500.html
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T232410.500.html
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T232241.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T232239.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T232223.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T232213.500.html
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T231956.200.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T231950.401.json
+
+###
+
+GET http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2024-10-06T231942.200.json
+
+###
+
+POST http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "brand": 1,
+  "number": "ABC123",
+  "capacity": 10.500,
+  "is_active": true,
+  "updated_by": 1
+}
+
+<> 2024-10-06T220401.400.json
+
+###
+
+POST http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "brand": 1,
+  "number": "ABC123",
+  "capacity": 10.500,
+  "is_active": true,
+  "updated_by": 1
+}
+
+<> 2024-10-06T192818.400.json
+
+###
+
+POST http://localhost:8000/api/loaders/
+Authorization: Token 941d623aae0a853459166354c7a91888e3757881
+Content-Type: application/json
+Content-Length: 100
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.2.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+
+{
+  "brand": 1,
+  "number": "ABC123",
+  "capacity": 10.500,
+  "is_active": true,
+  "updated_by": 1
+}
+
+<> 2024-10-06T192747.500.html
+
+###
+
