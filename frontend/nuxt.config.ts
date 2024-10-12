@@ -19,12 +19,6 @@ export default defineNuxtConfig({
         transpile: ['vuetify'],
     },
     modules: [
-        // (_options, nuxt) => {
-        //     nuxt.hooks.hook('vite:extendConfig', (config) => {
-        //         // @ts-expect-error
-        //         config.plugins.push(vuetify({autoImport: true}))
-        //     })
-        // },
         '@pinia/nuxt', // required
         '@nuxtjs/tailwindcss',
         'vuetify-nuxt-module',
@@ -35,8 +29,13 @@ export default defineNuxtConfig({
     ssr: true,
     runtimeConfig: {
         public: {
-            apiBaseURL: '/api/v1',
+            apiBaseURL: 'http://localhost:8000/api',
         },
+    },
+    imports: {
+        dirs: [
+            'repositories'
+        ]
     },
     css: ['~/assets/css/main.css'],
 
