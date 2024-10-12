@@ -1,5 +1,3 @@
-import vuetify, {transformAssetUrls} from 'vite-plugin-vuetify'
-import regexpPlugin from 'rollup-plugin-regexp'
 import * as mdicons from '@mdi/js'
 
 const mdi: Record<string, string> = {}
@@ -21,21 +19,18 @@ export default defineNuxtConfig({
         transpile: ['vuetify'],
     },
     modules: [
-        (_options, nuxt) => {
-            nuxt.hooks.hook('vite:extendConfig', (config) => {
-                // @ts-expect-error
-                config.plugins.push(vuetify({autoImport: true}))
-            })
-        },
+        // (_options, nuxt) => {
+        //     nuxt.hooks.hook('vite:extendConfig', (config) => {
+        //         // @ts-expect-error
+        //         config.plugins.push(vuetify({autoImport: true}))
+        //     })
+        // },
         '@pinia/nuxt', // required
+        '@nuxtjs/tailwindcss',
+        'vuetify-nuxt-module',
         'pinia-plugin-persistedstate/nuxt',
     ],
     vite: {
-        vue: {
-            template: {
-                transformAssetUrls,
-            },
-        },
     },
     ssr: true,
     runtimeConfig: {
@@ -43,4 +38,15 @@ export default defineNuxtConfig({
             apiBaseURL: '/api/v1',
         },
     },
+    css: ['~/assets/css/main.css'],
+
+    postcss: {
+        plugins: {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    },
+    "overrides": {
+        "vue": "latest"
+    }
 })

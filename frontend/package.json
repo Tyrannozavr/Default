@@ -13,12 +13,18 @@
     "@mdi/font": "^7.4.47",
     "@pinia/nuxt": "^0.5.5",
     "nuxt": "^3.13.2",
+    "nuxt-mdi": "^2.1.1",
     "pinia": "^2.2.4",
     "pinia-plugin-persistedstate": "^4.1.1",
     "vue": "^3.5.12",
-    "vue-router": "latest"
+    "vue-router": "latest",
+    "vuetify-nuxt-module": "^0.18.3"
   },
   "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
     "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.2"
   }
