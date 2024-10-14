@@ -20,10 +20,10 @@ export default defineNuxtPlugin((nuxtApp) => {
       }
     },
     async onResponseError({ request, response, options }) {
-      if (response.status === 401 && (request as any).url !== '/auth/refresh') {
+      if (response.status === 401 && (request as any).url !== '/auth/token/refresh') {
         try {
           const refreshToken = authStore.refreshToken
-          const refreshResponse = await $fetch<SignInResponse>('/auth/refresh', {
+          const refreshResponse = await $fetch<SignInResponse>('/auth/token/refresh', {
             method: 'POST',
             baseURL: config.public.apiBaseURL,
             body: { refreshToken: refreshToken },
@@ -42,13 +42,13 @@ export default defineNuxtPlugin((nuxtApp) => {
             }
           } else {
             authStore.clearTokens();
-            await navigateTo('/');
+            await navigateTo('/login');
           }
 
           return $fetch(request, options);
         } catch (e) {
           authStore.clearTokens();
-          await navigateTo('/');
+          await navigateTo('/login');
           return Promise.reject(e);
         }
       }

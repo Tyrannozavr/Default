@@ -41,22 +41,9 @@ class User(AbstractUser):
     objects = CustomUserManager()
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ['first_name', 'last_name']
+    REQUIRED_FIELDS = []
 
     class Meta:
         db_table = 'auth_user'
         verbose_name = 'Пользователь'
         verbose_name_plural = 'Пользователи'
-
-    def get_full_name(self):
-        last_name = self.last_name if self.last_name else ''
-        first_name = self.first_name if self.first_name else ''
-        surname = self.surname if self.surname else ''
-        return f'{last_name} {first_name} {surname}'
-
-    @property
-    def full_name(self):
-        return self.get_full_name()
-
-    def __str__(self):
-        return self.get_full_name()
