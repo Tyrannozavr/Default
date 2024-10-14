@@ -20,10 +20,10 @@ export default defineNuxtPlugin((nuxtApp) => {
       }
     },
     async onResponseError({ request, response, options }) {
-      if (response.status === 401 && (request as any).url !== '/auth/token/refresh') {
+      if (response.status === 401 && (request as any).url !== '/auth/token/refresh/') {
         try {
           const refreshToken = authStore.refreshToken
-          const refreshResponse = await $fetch<SignInResponse>('/auth/token/refresh', {
+          const refreshResponse = await $fetch<SignInResponse>('/auth/token/refresh/', {
             method: 'POST',
             baseURL: config.public.apiBaseURL,
             body: { refreshToken: refreshToken },

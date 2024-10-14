@@ -7,9 +7,10 @@ const login = async () => {
 	try {
 		loading.value = true;
 		await authService.signIn(email.value, password.value)
-		navigateTo('/challenge');
+		navigateTo('/');
 	} catch (error) {
-		useErrorHandler(error, error.data)
+    console.error(error)
+		useErrorHandler(error, "Invalid login or password")
 	} finally {
 		loading.value = false;
 	}
@@ -17,18 +18,6 @@ const login = async () => {
 }
 const isValid = ref(false)
 
-const nameRules = [
-  value => {
-    if (value) return true
-
-    return 'Name is required.'
-  },
-  value => {
-    if (value?.length <= 10) return true
-
-    return 'Name must be less than 10 characters.'
-  },
-]
 const emailRules = [
   value => {
     if (value) return true
@@ -66,6 +55,7 @@ const passwordRules = [
       <v-text-field
           v-model="password"
           :rules="passwordRules"
+          type="password"
           label="Password"
       ></v-text-field>
 

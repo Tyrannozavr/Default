@@ -8,10 +8,11 @@ const login = async () => {
 	try {
 		loading.value = true;
 		await authService.signUp(email.value, password.value)
-		navigateTo('/challenge');
+		navigateTo('/');
 	} catch (error) {
     let data = error._data
-		useErrorHandler(error, JSON.stringify(data.error))
+    console.error(JSON.stringify(data.error))
+		useErrorHandler(error, 'This email is already exist')
 	} finally {
 		loading.value = false;
 	}
@@ -19,18 +20,6 @@ const login = async () => {
 }
 const isValid = ref(false)
 
-const nameRules = [
-  value => {
-    if (value) return true
-
-    return 'Name is required.'
-  },
-  value => {
-    if (value?.length <= 10) return true
-
-    return 'Name must be less than 10 characters.'
-  },
-]
 const emailRules = [
   value => {
     if (value) return true
@@ -75,10 +64,12 @@ const password2Rules = [
       <v-text-field
           v-model="password"
           :rules="passwordRules"
+          type="password"
           label="Password"
       ></v-text-field>
       <v-text-field
           v-model="password2"
+          type="password"
           :rules="password2Rules"
           label="Repeat password"
       ></v-text-field>

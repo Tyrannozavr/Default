@@ -1,11 +1,28 @@
 ###
+POST localhost:8000/api/auth/signUp/
+Content-Type: application/json
+
+{
+  "email": "email@gmail.com",
+  "password": "password"
+}
+###
 POST localhost:8000/api/users/token/
 Content-Type: application/json
 
 {
-  "email": "username",
+  "email": "email@gmail.com",
   "password": "password"
 }
+###
+POST localhost:8000/api/users/token/
+Content-Type: application/json
+
+{
+  "email": "dimon@gmail.com",
+  "password": "123456"
+}
+###
 
 ### response is{
 #  "access":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX3BrIjoxLCJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiY29sZF9zdHVmZiI6IuKYgyIsImV4cCI6MTIzNDU2LCJqdGkiOiJmZDJmOWQ1ZTFhN2M0MmU4OTQ5MzVlMzYyYmNhOGJjYSJ9.NHlztMGER7UADHZJlxNG0WSi22a2KaYSfd1S-AuT7lU",

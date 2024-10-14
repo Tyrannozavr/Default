@@ -11,7 +11,7 @@ export const authService = {
     });
 
     const { accessToken, refreshToken } = response;
-    authStore.setTokens(accessToken, refreshToken);x
+    authStore.setTokens(accessToken, refreshToken);
     return response;
   },
 
