@@ -61,7 +61,7 @@ const passwordRules = [
 
       <v-btn class="mt-2" type="submit" block @click="login" :loading="loading">Submit</v-btn>
     </v-form>
-    <div class="d-flex flex-row">Still don't have an account?<v-spacer></v-spacer><NuxtLink
+    <div class="d-flex flex-row mt-4">Still don't have an account?<v-spacer></v-spacer><NuxtLink
         to="/registration" class="text-blue">Registration</NuxtLink></div>
   </v-sheet>
 
