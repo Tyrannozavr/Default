@@ -4,6 +4,8 @@ export const useAuthStore = defineStore('auth', {
   state: () => ({
     accessToken: '',
     refreshToken: '',
+    isAuthenticated: false,
+    username: '',
   }),
   getters: {
     getTokenData(state: any): JWTPayload | null {
@@ -34,5 +36,10 @@ export const useAuthStore = defineStore('auth', {
       this.accessToken = '';
       this.refreshToken = '';
     },
+    login(accessToken: string, refreshToken: string, username?: string): void {
+      this.setTokens(accessToken, refreshToken);
+      this.username = username ? username: ''
+      this.isAuthenticated = true
+    }
   },
 })

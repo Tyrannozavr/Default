@@ -26,7 +26,7 @@ export default defineNuxtPlugin((nuxtApp) => {
           const refreshResponse = await $fetch<SignInResponse>('/auth/token/refresh/', {
             method: 'POST',
             baseURL: config.public.apiBaseURL,
-            body: { refreshToken: refreshToken },
+            body: { refresh: refreshToken },
           });
           authStore.setTokens(refreshResponse.accessToken, refreshResponse.refreshToken);
 

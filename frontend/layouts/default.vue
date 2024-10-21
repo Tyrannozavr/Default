@@ -7,11 +7,25 @@
     <v-app>
       <v-layout ref="app" class="rounded-md">
         <v-app-bar color="grey-lighten-2 justify-end" name="app-bar">
+          <NuxtLink
+              to="/"
+              class="ml-4"
+            >Default</NuxtLink>
+          <NuxtLink
+              to="/test"
+              class="ml-4"
+            >test</NuxtLink>
+
           <v-spacer></v-spacer>
           <NuxtLink to="/login"
                     class="flex items-center justify-center px-5 mr-4 rounded-2xl h-8 bg-amber-200 hover:bg-amber-700">
+            Login
+          </NuxtLink>
+          <NuxtLink to="/profile"
+                    class="flex items-center justify-center px-5 mr-4 rounded-2xl h-8 bg-amber-200 hover:bg-amber-700">
             Profile
           </NuxtLink>
+
         </v-app-bar>
         <v-navigation-drawer
             color="grey-darken-2"

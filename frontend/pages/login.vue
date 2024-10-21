@@ -42,7 +42,7 @@ const passwordRules = [
     return 'Email must be more than 5 characters.'
   },
 ]
-
+const authStore = useAuthStore()
 </script>
 <template>
   <v-sheet class="mx-auto" width="300">

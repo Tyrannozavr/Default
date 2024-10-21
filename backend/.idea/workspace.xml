@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45b7b39e-5a05-4494-95c3-57256d321a3d" name="Changes" comment="initial example of backend is ready">
-      <change beforePath="$PROJECT_DIR$/.idea/backend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/layouts/default.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/pages/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/pages/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/repositories/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/repositories/auth.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +38,11 @@
     "Django Server.backend.executor": "Run",
     "HTTP Request.auth | #1.executor": "Run",
     "HTTP Request.auth | #2.executor": "Run",
+    "HTTP Request.auth | #3.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/user/PycharmProjects/default/backend",
+    "last_opened_file_path": "/home/user/PycharmProjects/autozapchasti",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,6 +62,9 @@
       <method v="2" />
     </configuration>
     <configuration name="auth | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/examples/auth.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="auth | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/examples/auth.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="backend" type="Python.DjangoServer" factoryName="Django server">
@@ -96,13 +94,15 @@
     </configuration>
     <list>
       <item itemvalue="Django Server.backend" />
+      <item itemvalue="HTTP Request.auth | #3" />
       <item itemvalue="HTTP Request.auth | #1" />
       <item itemvalue="HTTP Request.auth | #2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.auth | #1" />
+        <item itemvalue="HTTP Request.auth | #3" />
         <item itemvalue="HTTP Request.auth | #2" />
+        <item itemvalue="HTTP Request.auth | #1" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +123,7 @@
       <option name="presentableId" value="Default" />
       <updated>1728730579692</updated>
       <workItem from="1728730581034" duration="6699000" />
-      <workItem from="1728887434085" duration="1995000" />
+      <workItem from="1728887434085" duration="6859000" />
     </task>
     <task id="LOCAL-00001" summary="initial example of backend is ready">
       <option name="closed" value="true" />

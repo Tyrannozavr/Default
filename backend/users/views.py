@@ -44,3 +44,13 @@ class CustomAuthToken(APIView):
         else:
             token, created = Token.objects.get_or_create(user=user)
             return Response({'token': token.key}, status.HTTP_200_OK)
+
+
+class UserAPIView(APIView):
+    def get(self, request):
+        user = request.user
+        if user.is_authenticated:
+            serializer = UserSerializer(user)
+            return Response(serializer.data)
+        else:
+            return Response(status=status.HTTP_401_UNAUTHORIZED)
