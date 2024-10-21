@@ -9,9 +9,7 @@ export const authService = {
       method: 'POST',
       body: { email, password },
     });
-  console.log('response is', response)
     const { access, refresh } = response;
-  console.log('tokens are', access, refresh)
     authStore.setTokens(access, refresh);
     return response;
   },
